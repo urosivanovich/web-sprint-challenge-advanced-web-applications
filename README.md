@@ -117,9 +117,18 @@ In this project, you will demonstrate your mastery of these skills by creating *
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below.
 
 1. Explain what a token is used for.
+ • Access tokens are used in token-based authentication to allow an application to access an API. The application receives an access token after a user successfully authenticates and authorizes access, then passes the access token as a credential when it call the target API.
+   The passed token informs the API that the bearer of the token has been authorized to access the API and perform specific actions specified by the scope that was granted during authorization.
 
 2. What steps can you take in your web apps to keep your data secure?
+ • Protect our routes with Private Route method (Redirect all possible routes to one route until the user confirm his authentication.)
+ • Hide all vulnerable Links
 
 3. Describe how web servers work.
+ • At the most basic level, whenever a browser needs a file that is hosted on a web server, the browser requests the file via HTTP. When the requests reaches the correct (hardware) web server, the (software) HTTP server accepts the requests, finds the requested document, and sends it back to the browser, also through HTTP. If the server doesn't find the requested document, it returns a 404 response instead.
 
 4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+ • POST - Insert (create) data
+ • GET - Read data
+ • PUT or PATCH - Update data, or insert if a new id
+ • DELETE - Delete data
